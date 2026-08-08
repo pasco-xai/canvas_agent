@@ -1,0 +1,6 @@
+{
+  "name": "Remix Gridscape",
+  "description": "Infinite spatial canvas application for exploring interconnected concepts with AI-powered nodes, dynamic relationships, and contextual visual synthesis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

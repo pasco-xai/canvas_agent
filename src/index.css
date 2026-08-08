@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-display {
+    font-family: 'Orbitron', 'Space Grotesk', sans-serif;
+    letter-spacing: -0.03em;
+  }
+  .font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+  }
+  .font-mono {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+  }
+  .font-sans {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Sophisticated Dark Theme Classes */
+.grid-bg {
+  background-image: radial-gradient(circle, #222222 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.node-border {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(15, 15, 15, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+.mono {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+.display {
+  font-family: 'Orbitron', 'Space Grotesk', sans-serif;
+  letter-spacing: -0.04em;
+}
+
+/* Custom grid background patterns */
+.bg-grid-dots {
+  background-image: radial-gradient(circle, #262626 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.bg-grid-lines {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.bg-grid-iso {
+  background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(150deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 60px 34.64px;
+}
+
+/* Pulse animation along connection lines */
+@keyframes dash-flow {
+  from {
+    stroke-dashoffset: 24;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-dash-flow {
+  animation: dash-flow 1.5s linear infinite;
+}
+
+/* Hide scrollbar for custom scroll containers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glow utility */
+.glow-cyan {
+  box-shadow: 0 0 25px -5px rgba(56, 189, 248, 0.25);
+}
+.glow-purple {
+  box-shadow: 0 0 25px -5px rgba(168, 85, 247, 0.25);
+}
+.glow-emerald {
+  box-shadow: 0 0 25px -5px rgba(52, 211, 153, 0.25);
+}
+
